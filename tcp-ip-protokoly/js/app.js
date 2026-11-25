@@ -1172,7 +1172,7 @@
       '<section id="view-dashboard" class="dash-wrap" aria-label="Přehled protokolů TCP/IP">' +
         '<div class="dash-header">' +
           '<div class="dash-title-group">' +
-            '<h1 class="view-title">' + esc((curriculum && curriculum.appInfo && curriculum.appInfo.title) || 'OP4 • Protokoly TCP/IP') + '</h1>' +
+            '<h1 class="view-title">' + esc((curriculum && curriculum.appInfo && curriculum.appInfo.title) || 'OP • Protokoly TCP/IP') + '</h1>' +
             '<p class="dash-subtitle">' + esc((curriculum && curriculum.appInfo && curriculum.appInfo.subtitle) || 'Architektura TCP/IP, směrovací a aplikační protokoly') + '</p>' +
             '<div class="dash-hero-stats">' +
               '<span class="badge badge-cyan">' + modules.length + ' modulů</span>' +

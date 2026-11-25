@@ -1,4 +1,4 @@
-# OP4 basics • Obecné principy počítačových sítí
+# OP • Obecné principy počítačových sítí
 
 Přehledný výukový a prezentační webový dashboard pro obecné principy počítačových sítí určený pro výuku i samostudium. Samostatný, plně soběstačný projekt ve složce `/Users/filip/Desktop/2OP/OP4/` bez jakýchkoli externích nebo projektových závislostí.
 
@@ -33,12 +33,12 @@ Obsah je systematicky rozdělen do **7 obecných modulů** (**18 témat**), kter
 
 ---
 
-## Struktura projektu OP4
+## Struktura projektu OP
 
 ```text
 /Users/filip/Desktop/2OP/OP4/
 ├── index.html                  # Vstupní SPA stránka
-├── README.md                   # Dokumentace projektu OP4 basics
+├── README.md                   # Dokumentace projektu OP
 ├── server.mjs                  # HTTP/1.1 statický server na portu 8767 (Range 206)
 ├── css/
 │   └── styles.css              # Design systém (světlý/tmavý režim, dashboard, prezentace)
@@ -50,9 +50,9 @@ Obsah je systematicky rozdělen do **7 obecných modulů** (**18 témat**), kter
 │   ├── visuals.js              # Canvas animace, náhledy a interaktivní laboratoře
 │   └── app.js                  # SPA směrovač, dashboard, detail tématu a studijní nástroje
 └── media/
-    ├── *.mp4                   # 14 lokálních výukových videí
+    ├── *.mp4                   # 18 lokálních výukových videí
     └── posters/
-        └── *.jpg               # 14 extrahovaných 16:9 náhledových snímků
+        └── *.jpg               # 18 extrahovaných 16:9 náhledových snímků
 ```
 
 ---

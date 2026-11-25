@@ -10,7 +10,7 @@
   var part2 = global.__OP4_DATA_PART2__ || { topics: [], glossary: [] };
 
   var appInfo = {
-    title: "OP4 • Protokoly TCP/IP",
+    title: "OP • Protokoly TCP/IP",
     subtitle: "Architektura TCP/IP, směrovací a aplikační protokoly, simulace a videa",
     version: "4.0"
   };

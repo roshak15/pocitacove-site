@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OP4 • Protokoly TCP/IP</title>
+  <title>OP • Protokoly TCP/IP</title>
   <meta name="description" content="Přehledný interaktivní výukový dashboard pro protokoly TCP/IP: TCP/UDP, RIP/OSPF/BGP, DNS, DHCP, NTP, HTTP/HTTPS, SMTP/IMAP/POP3, FTP/FTPS, Samba/SMB, SSH/Telnet/SFTP, RDP/VNC, SNMP/Syslog a aplikační protokoly." />
   <script>
     (function () {
@@ -46,7 +46,7 @@
 
         <button type="button" class="brand-btn" data-nav="dashboard" aria-label="Přejít na přehled kapitol">
           <span id="brand-icon-slot" class="brand-icon" aria-hidden="true"></span>
-          <span class="brand-title">OP4 • Protokoly TCP/IP</span>
+          <span class="brand-title">OP • Protokoly TCP/IP</span>
         </button>
       </div>
 
@@ -124,7 +124,7 @@
   <main id="view-root" class="page-main" tabindex="-1">
     <div class="state-box" role="status" aria-live="polite">
       <h1>Načítání…</h1>
-      <p class="muted">OP4 • Protokoly TCP/IP — Připravuji simulace, videa a přehled protokolů.</p>
+      <p class="muted">OP • Protokoly TCP/IP — Připravuji simulace, videa a přehled protokolů.</p>
     </div>
     <noscript>
       <div class="state-box">
@@ -137,23 +137,22 @@
   <footer class="site-footer" role="contentinfo">
     <div class="site-footer-inner">
       <div class="site-footer-meta">
-        <span class="site-footer-badge">VOŠ a SPŠE Františka Křižíka</span>
-        <span>Výukový materiál pro protokoly TCP/IP</span>
+        <span>© 2026 Škola Křižík (skolakrizik)</span>
         <span class="site-footer-sep" aria-hidden="true">·</span>
-        <span>Licence <a class="site-footer-link" href="https://creativecommons.org/licenses/by/4.0/deed.cs" target="_blank" rel="noopener noreferrer">Creative Commons CC BY 4.0</a> (volné užití, sdílení i úpravy s uvedením původu)</span>
+        <a class="site-footer-link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.cs" target="_blank" rel="noopener noreferrer">Creative Commons CC BY-NC-SA 4.0</a>
         <span class="site-footer-sep" aria-hidden="true">·</span>
-        <span>Vytvořeno s využitím nástrojů AI (texty, simulace i syntetický hlasový komentář)</span>
+        <span>Vytvořeno za přispění umělé inteligence (AI)</span>
       </div>
       <nav id="portal-footer-nav" class="site-footer-portal-nav" aria-label="Přepnutí kurzu" hidden>
         <a class="site-footer-nav-pill" href="../">← Rozcestník sítí</a>
-        <a class="site-footer-nav-pill" href="../op4-basics/">OP4 basics →</a>
+        <a class="site-footer-nav-pill" href="../op/">OP →</a>
       </nav>
     </div>
     <script>
       (function () {
         var p = window.location.pathname || '';
         var nav = document.getElementById('portal-footer-nav');
-        if (nav && (p.indexOf('/op4-basics/') !== -1 || p.indexOf('/tcp-ip-protokoly/') !== -1)) {
+        if (nav && (p.indexOf('/op/') !== -1 || p.indexOf('/op4-basics/') !== -1 || p.indexOf('/tcp-ip-protokoly/') !== -1)) {
           nav.hidden = false;
         }
       })();

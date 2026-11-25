@@ -1,4 +1,4 @@
-# OP4 • Protokoly TCP/IP
+# OP • Protokoly TCP/IP
 
 Přehledný interaktivní výukový a prezentační webový dashboard pro **protokoly TCP/IP** určený pro výuku i samostudium. Samostatný, plně **offline** soběstačný projekt ve složce `/Users/filip/Desktop/2OP/TCP-IP-Protokoly/` bez jakýchkoli externích závislostí, CDN či build nástrojů.
 
@@ -51,7 +51,7 @@ node server.mjs
 ```text
 /Users/filip/Desktop/2OP/TCP-IP-Protokoly/
 ├── index.html                  # Vstupní SPA stránka (Carbon Design System, témata)
-├── README.md                   # Dokumentace projektu OP4 • Protokoly TCP/IP
+├── README.md                   # Dokumentace projektu OP • Protokoly TCP/IP
 ├── server.mjs                  # Lokální HTTP/1.1 statický server na portu 8772 (Range 206)
 ├── css/
 │   └── styles.css              # Design systém (světlý/tmavý/prezentační režim, Port Explorer)

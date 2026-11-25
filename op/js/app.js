@@ -1098,7 +1098,7 @@
       '<section id="view-dashboard" class="dash-wrap" aria-label="Přehled obecných principů sítí">' +
         '<div class="dash-header">' +
           '<div class="dash-title-group">' +
-            '<h1 class="view-title">' + esc((curriculum && curriculum.appInfo && curriculum.appInfo.title) || 'OP4 basics') + '</h1>' +
+            '<h1 class="view-title">' + esc((curriculum && curriculum.appInfo && curriculum.appInfo.title) || 'OP') + '</h1>' +
             '<p class="dash-subtitle">' + esc((curriculum && curriculum.appInfo && curriculum.appInfo.subtitle) || 'Obecné principy počítačových sítí') + '</p>' +
           '</div>' +
           '<div class="dash-header-right">' +

@@ -419,16 +419,15 @@
         video: {
           hasBundledVideo: true,
           previewMode: "video",
-          src: "media/iso-osi-routing.mp4",
-          poster: "media/posters/iso-osi-routing.jpg",
+          src: "media/iso-osi.mp4",
+          poster: "media/posters/iso-osi.jpg",
           startTime: 0,
-          durationLabel: "0:10",
+          durationLabel: "0:13",
           chapters: [
-            { label: "1. 7 vrstev ISO/OSI (0:00)", time: 0 },
-            { label: "2. L3 routování – ukázka (0:04, viz téma 13)", time: 3.8 },
-            { label: "3. Enkapsulace a dekapsulace (0:07)", time: 7.2 }
+            { label: "1. Vrstvy ISO/OSI (L1–L7) vs. TCP/IP (0:00)", time: 0 },
+            { label: "2. Zapouzdření a rozbalení dat PDU (0:07)", time: 6.5 }
           ],
-          transcript: "0:00–0:04: 7 vrstev ISO/OSI – Zobrazení vrstev 7 (Aplikační) až 1 (Fyzická) mezi PC-A a PC-B.\n0:04–0:07: Přechod L3 routování (podrobně v tématu 13) – Paket na 3. vrstvě prochází směrovačem podle IP adresy.\n0:07–0:10: Enkapsulace a dekapsulace – Vlevo u PC-A balení dat (H7–H2 do L2 rámce), vpravo u PC-B postupné rozbalování všech 7 vrstev."
+          transcript: "0:00–0:07: Vrstvy ISO/OSI vs. TCP/IP – „Sedmivrstvý model ISO/OSI přehledně dělí komunikaci od aplikace až po fyzický přenos bitů.“\n0:07–0:13: Zapouzdření PDU – „Při odeslání dat každá vrstva přidá vlastní hlavičku a na straně příjemce ji opět rozbalí.“"
         },
         animationType: "iso-osi",
         labType: "osi-inspector",
@@ -811,14 +810,17 @@
         accentColor: "#0ea5e9",
         tags: ["VLAN 802.1Q", "TPID 0x8100 / VID", "Access (PVID) vs. Trunk", "Native VLAN & VLAN Hopping", "Voice VLAN", "Router-on-a-Stick vs. L3 SVI"],
         video: {
-          hasBundledVideo: false,
-          previewMode: "canvas",
-          src: null,
-          poster: null,
+          hasBundledVideo: true,
+          previewMode: "video",
+          src: "media/vlan.mp4",
+          poster: "media/posters/vlan.jpg",
           startTime: 0,
-          durationLabel: "Interaktivní",
-          chapters: [],
-          transcript: "Interaktivní vizualizace znázorňuje vkládání 4bajtové značky IEEE 802.1Q (TPID 0x8100, VID) na Access portech (PVID), souběžný přenos více VLAN po Trunk lince, Voice VLAN pro IP telefony a L3 komunikaci mezi VLAN přes Router-on-a-Stick nebo SVI."
+          durationLabel: "0:13",
+          chapters: [
+            { label: "1. Izolace VLAN & Access porty (0:00)", time: 0 },
+            { label: "2. 802.1Q Trunk & Inter-VLAN routing (0:07)", time: 6.5 }
+          ],
+          transcript: "0:00–0:07: Izolace VLAN – „Virtuální sítě VLAN logicky oddělí různé skupiny uživatelů i na jediném společném přepínači.“\n0:07–0:13: Trunk a směrování – „Společný trunk mezi přepínači nese značky a komunikaci mezi sítěmi řídí směrovač.“"
         },
         animationType: "vlan",
         labType: "vlan-sim",

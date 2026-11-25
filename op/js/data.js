@@ -9,7 +9,7 @@
   var part2 = global.__OP4_DATA_PART2__ || { topics: [], glossary: [] };
 
   var appInfo = {
-    title: "OP4 basics",
+    title: "OP",
     subtitle: "Obecné principy počítačových sítí",
     version: "4.0"
   };

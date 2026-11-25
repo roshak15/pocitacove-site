@@ -161,15 +161,15 @@
         video: {
           hasBundledVideo: true,
           previewMode: "video",
-          src: "media/dhcp-nat.mp4",
+          src: "media/dhcp.mp4",
           poster: "media/posters/dhcp.jpg",
           startTime: 0,
-          durationLabel: "0:04",
+          durationLabel: "0:13",
           chapters: [
-            { label: "1. DHCP přidělení IP (0:00)", time: 0 },
-            { label: "2. Připraveno pro NAT (0:04, viz téma 14)", time: 4 }
+            { label: "1. Přidělení IP, masky, brány a DNS (0:00)", time: 0 },
+            { label: "2. Potvrzení ACK & obnova pronájmu (0:07)", time: 6.5 }
           ],
-          transcript: "0:00–0:04: „DHCP automaticky přiděluje IP adresy. Každý počítač tak získá svou vlastní adresu.“ Na scéně DHCP SERVER pošle přes SWITCH konfigurační zprávy a stanice PC-A obdrží adresu 192.168.1.10 (stejně jako PC-B svou adresu v síti). PC-A je ihned připraveno odeslat datový paket se zdrojovou adresou SRC: 192.168.1.10 směrem k bráně GATEWAY."
+          transcript: "0:00–0:07: Proces DORA – „Protokol DHCP automaticky přidělí novému zařízení IP adresu, masku sítě i bránu.“\n0:07–0:13: Potvrzení a obnova – „Probíhá ve čtyřech krocích od vyhledání serveru po potvrzení a pronájem se průběžně obnovuje.“"
         },
         animationType: "dhcp-dora",
         labType: "dora-stepper",
@@ -430,15 +430,15 @@
         video: {
           hasBundledVideo: true,
           previewMode: "video",
-          src: "media/iso-osi-routing.mp4",
+          src: "media/routing.mp4",
           poster: "media/posters/routing.jpg",
-          startTime: 3.8,
-          durationLabel: "0:06",
+          startTime: 0,
+          durationLabel: "0:13",
           chapters: [
-            { label: "1. Směrovací tabulka Routeru (0:04)", time: 3.8 },
-            { label: "2. Cesta paketu do Internetu (0:07)", time: 7 }
+            { label: "1. Směrovací tabulka & Longest Prefix (0:00)", time: 0 },
+            { label: "2. Statické vs. dynamické routování (0:07)", time: 6.5 }
           ],
-          transcript: "0:04–0:07: „Zde probíhá routování podle IP adres. Paket se vloží do rámce, ten se pak odešle k cílovému routeru.“ Červený ROUTER přijme rámec, vyjme IP paket a nahlédne do své tabulky SMĚROVACÍ TABULKA, kde najde shodu: Cílová IP: 192.168.2.10 → Výstupní port: WAN 1. Poté paket znovu zabalí do nového L2 rámce pro výstupní rozhraní WAN 1 a pošle jej směrem do Internetu."
+          transcript: "0:00–0:07: Směrovací tabulka – „Směrovač vybírá cestu pro každý paket ve směrovací tabulce podle nejdelší shody masky.“\n0:07–0:13: Statika a dynamika – „Statické trasy zadává správce ručně, zatímco dynamické protokoly samy najdou objížďku při výpadku.“"
         },
         animationType: "routing",
         labType: "routing-table-sim",
@@ -559,15 +559,15 @@
         video: {
           hasBundledVideo: true,
           previewMode: "video",
-          src: "media/dhcp-nat.mp4",
-          poster: "media/posters/dhcp-nat.jpg",
-          startTime: 4.8,
-          durationLabel: "0:05",
+          src: "media/nat-pat.mp4",
+          poster: "media/posters/nat-pat.jpg",
+          startTime: 0,
+          durationLabel: "0:13",
           chapters: [
-            { label: "1. NAT překlad adres (0:05)", time: 4.8 },
-            { label: "2. Cesta do Internetu (0:07)", time: 7 }
+            { label: "1. Překlad PAT (sdílená veřejná IP) (0:00)", time: 0 },
+            { label: "2. Tabulka portů & DNAT Forwarding (0:07)", time: 6.5 }
           ],
-          transcript: "0:04–0:09: „NAT pak překládá vnitřní adresu na veřejnou. Díky tomu můžete bezpečně surfovat po internetu.“ Stanice PC-A posílá data se zdrojovou adresou SRC: 192.168.1.10. Router GATEWAY nahlédne do tabulky NAT TABULKA, přeloží Vnitřní IP: 192.168.1.10 → Vnější IP: 203.0.113.5 a odešle paket se zdrojovou adresou SRC: 203.0.113.5 do mraku INTERNET."
+          transcript: "0:00–0:07: Překlad PAT – „Překlad adres PAT umožní celé domácí či firemní síti sdílet jedinou veřejnou IP adresu.“\n0:07–0:13: Tabulka portů a DNAT – „Směrovač si hlídá čísla portů v tabulce a přesměrování portů zpřístupní vnitřní server zvenčí.“"
         },
         animationType: "nat-pat",
         labType: "nat-translator",
@@ -946,14 +946,17 @@
         accentColor: "#ef4444",
         tags: ["Stateless ACL", "Stateful Firewall", "Connection Tracking", "NGFW / DPI", "IPS / IDS", "DMZ & Default-Deny"],
         video: {
-          hasBundledVideo: false,
-          previewMode: "canvas",
-          src: null,
-          poster: null,
+          hasBundledVideo: true,
+          previewMode: "video",
+          src: "media/firewall.mp4",
+          poster: "media/posters/firewall.jpg",
           startTime: 0,
-          durationLabel: "Interaktivní",
-          chapters: [],
-          transcript: "Interaktivní vizualizace porovnává průchod paketu třemi generacemi firewallu: bezstavovým filtrem (kontrola 5-tice hodnot každého paketu zvlášť), stavovým firewallem (tabulka spojení NEW, ESTABLISHED, RELATED, INVALID) a NGFW s L7 hloubkovou inspekcí (DPI, App-ID a IPS)."
+          durationLabel: "0:13",
+          chapters: [
+            { label: "1. Stavový firewall (State Table) (0:00)", time: 0 },
+            { label: "2. NGFW: Inspekce aplikací (L7 + IPS) (0:07)", time: 6.5 }
+          ],
+          transcript: "0:00–0:07: Stavový firewall – „Stavový firewall sleduje navázaná spojení, propustí vyžádané odpovědi a cizí útoky zablokuje.“\n0:07–0:13: NGFW a L7 inspekce – „Moderní firewall nové generace navíc rozpozná samotné aplikace a odhalí hrozby uvnitř paketů.“"
         },
         animationType: "firewall",
         labType: "firewall-inspector",
@@ -1094,14 +1097,17 @@
         accentColor: "#f97316",
         tags: ["SDN", "Control vs. Data Plane", "OpenFlow", "NETCONF / RESTCONF", "SD-WAN", "IBN & Kontroléry"],
         video: {
-          hasBundledVideo: false,
-          previewMode: "canvas",
-          src: null,
-          poster: null,
+          hasBundledVideo: true,
+          previewMode: "video",
+          src: "media/sdn.mp4",
+          poster: "media/posters/sdn.jpg",
           startTime: 0,
-          durationLabel: "Interaktivní",
-          chapters: [],
-          transcript: "Interaktivní vizualizace zobrazuje třívrstvou architekturu SDN: Aplikační rovinu komunikující přes Northbound REST API s centrálním SDN kontrolérem (Control Plane), který přes Southbound API (OpenFlow / NETCONF) hromadně programuje přeposílací tabulky switchů a AP v datové rovině (Data Plane)."
+          durationLabel: "0:13",
+          chapters: [
+            { label: "1. Architektura Control vs. Data Plane (0:00)", time: 0 },
+            { label: "2. Hromadná konfigurace z kontroleru (0:07)", time: 6.5 }
+          ],
+          transcript: "0:00–0:07: Oddělení rovin – „Softwarově definovaná síť odděluje centrální řídicí mozek od přepínačů, které přeposílají data.“\n0:07–0:13: Hromadná správa – „Správce tak z jediného kontroleru okamžitě nastaví pravidla i trasy napříč celou sítí.“"
         },
         animationType: "sdn",
         labType: "sdn-controller-sim",
